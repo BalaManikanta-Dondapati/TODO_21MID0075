@@ -1,0 +1,169 @@
+.ancestorContainer {
+    display: flex;
+    background-color: whitesmoke;
+    padding: 8px;
+    border-radius: 8px;
+    height: 80vh;
+    margin: 6px;
+    flex-direction: column;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding: 4px;
+}
+
+.addButton {
+    height: fit-content;
+    width: fit-content;
+    padding: 12px 8px;
+    background-color: floralwhite;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: large;
+    font-weight: 700;
+    transition: all 0.3s linear;
+    box-shadow: 1px 1px 4px 2px rgb(0, 0, 0, 0.1);
+}
+
+.addButton:hover {
+    box-shadow: 1px 1px 4px 2px rgb(0, 0, 0, 0.4);
+}
+
+.todoContainer {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    background-color: rgb(0, 0, 0);
+    margin: 4px;
+    border-radius: 8px;
+    padding: 8px;
+    gap: 12px;
+    border-radius: 8px;
+    overflow-y: auto;
+}
+
+.todo {
+    background-color: white;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 4px 2px rgb(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.todo input[type="checkbox"] {
+    margin-right: 8px;
+    height: 20px;
+    width: 20px;
+}
+
+.infoContainer {
+    width: 100%;
+    font-size: large;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infoContainer div {
+    width: 100%;
+    overflow: hidden;
+}
+
+.infoContainer strong {
+    display: block;
+    font-size: x-large;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.infoContainer p {
+    font-size: medium;
+    color: gray;
+    margin: 4px 0 0 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.actionsContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+.todoInput {
+    width: 250px;
+    margin-right: 8px;
+    height: 45px;
+    font-size: large;
+}
+
+.noTodoMessage {
+    color: white;
+    align-self: center;
+    justify-self: center;
+    font-size: large;
+}
+
+.editContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.editInputs {
+    display: flex;
+    gap: 8px;
+}
+
+.editActions {
+    display: flex;
+    gap: 8px;
+}
+
+.todo .editButton {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.todo .editButton:hover {
+    background-color: #45a049;
+}
+
+.todo .deleteButton {
+    background-color: #f44336; /* Red */
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.todo .deleteButton:hover {
+    background-color: #e53935;
+}
